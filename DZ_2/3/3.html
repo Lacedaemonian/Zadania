@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var a = prompt('Введите начальное число'); //Начальное число
+	a = parseInt(a);
+	var b = prompt('Введите конечное число'); //Конечное значение
+	b = parseInt(b);
+	var g = prompt('Введите кол-во колонок'); //Кол-во колонок
+	g = parseInt(g);
+	str = '';
+	var rows = Math.ceil(b / g); //число рядов
+	for (i = 1; i < b; i++) {
+	  if (i < 10) str += ' ';
+	  str = str + i + ' ';
+	  if (i % rows == 0) str += '\n';
+	}
+	str = str + b;
+	console.log(str);
+    </script>
+</body>
+</html>
