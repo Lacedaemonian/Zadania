@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var a = prompt ('Введите координату по горизонтали');
+		a = parseInt(a);
+		var b = prompt ('Введите координату по вертикали');
+		b = parseInt(b);
+		var c = prompt ('Введите координату по горизонтали');
+		c = parseInt(c);
+		var d = prompt ('Введите координату по вертикали');
+		d = parseInt(d);
+
+		if(((Math.abs( c - a == 1) && Math.abs( d - b == 2)) || Math.abs( c - a ==2) && Math.abs( d - b ==1))){
+			alert('Верно')
+		}
+		else {
+			alert('Не верно')
+		}
+	</script>
+</body>
+</html>

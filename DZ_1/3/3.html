@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var speedLodka=prompt('Введите скорость лодки (км/ч)');
+		var timeOzero=prompt('Введите время движения лодки по озеру (ч.)');
+		var way = ( speedLodka * timeOzero );
+		alert( 'Лодка пройдет ' +way+ ' км.' );
+
+		var speedLodka=prompt('Введите скорость лодки (км/ч)');
+		var speedReka=prompt('Введите скорость течении реки (км/ч)');
+		var timeOzero=prompt('Введите время движения лодки по озеру (ч.)');
+		var speed = speedLodka - speedReka;
+
+		if (speed > 0){
+		var way2 = (speed * timeOzero);
+		alert( 'Лодка пройдет ' +way2+ ' км');
+		}else{
+		  alert('Скорость лодки меньше скорости реки');
+		}
+    </script>
+</body>
+</html>
