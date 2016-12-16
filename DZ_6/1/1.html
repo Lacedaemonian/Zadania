@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form name = "myForm">
+		<select size = "5" multiple id = "selectId" name = "select"></select>
+	</form>
+	<script>
+		var objSel = document.getElementById("selectId");
+		var objSel = document.myForm.select;
+
+		objSel.options[0] = new Option("Серия 1", "Seria1");
+		objSel.options[1] = new Option("Серия 2", "Seria2");
+		objSel.options[2] = new Option("Серия 3", "Seria3");
+		objSel.options[3] = new Option("Серия 4", "Seria4");
+		objSel.options[4] = new Option("Серия 5", "Seria5");
+	</script>
+</body>
+</html>
